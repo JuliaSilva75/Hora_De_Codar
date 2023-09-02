@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name=" author " content="Julia Silva de Araujo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Uma série de exercicíos resolvidos ">
+    <a target="_blank" href="https://icons8.com/icon/Zr2dmmTRrlxx/connect">Connect</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <title> Hora de cordar</title>
+    <script>
+
+        // //1 Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e atribua-a um valor "Fusca". Exiba-a ao usuário.
+        
+         var nome_do_carro = "Fusca";
+         alert(nome_do_carro);
+
+
+        // //2 Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".
+
+        var nome_do_usuario = prompt('Informe seu nome');
+        
+        alert( "olá, " + nome_do_usuario);
+
+        //3 Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".
+
+        var nome = prompt("Informe seu Nome")
+        var idade= prompt("Informe sua idade")
+
+        alert("Olá, " + nome + ", Sua idade é "+ idade );
+        
+        //4 Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.
+
+        //Retângulo
+        var base = prompt(' Retângulo: Qual é a base:')
+        var altura = prompt ('Retângulo: Informe a altura:')
+
+        base = parseInt(base)
+        altura = parseInt(altura)
+
+        document.write("A área do Retângulo é: "+ base + " . " + altura + " A = "+ (base*altura));
+
+
+        //Quadrado 
+        var lado_A = prompt("Quadrado: Informe o primeiro valor do lado ") 
+        var lado_B = prompt("Quadrado: Informe o segundo valor do lado ")
+
+        lado_A = parseInt (lado_A)
+        lado_B = parseInt(lado_B)
+
+        var lado_C = (lado_A*lado_B)
+
+        alert("Área do quadrado: " + lado_A +"."+ lado_B +"=" + lado_C +"² A =" + (lado_C**2 ));
+
+
+        //Losango
+        var Diagnoal_Maior = prompt("Losango: Informe a Diagnoal Maior: ") 
+        var Diagonal_Menor = prompt("Losango: Informe a Diagonal Menor: ")
+
+        Diagonal_Menor = parseInt (Diagonal_Menor)
+        Diagnoal_Maior= parseInt(Diagnoal_Maior)
+        Diagnoal = (Diagnoal_Maior* Diagonal_Menor)
+
+        alert("Losango: " + Diagnoal_Maior +" . "+ Diagonal_Menor+" =" + Diagnoal +" /2 Resultado:" +(Diagnoal/2) );
+
+
+        //Trapézio 
+        var base_maior = prompt("Trapézio informe a base maior:")
+        var base_menor = prompt("Trapézio informe a base menor:")
+        var Altura = prompt("Trapézio informe a altura:")
+
+
+
+        base_maior = parseInt(base_maior)
+        base_menor = parseInt(base_menor)
+        Altura = parseInt(Altura)
+
+        //Calulei primeiramente a média da base, depois utilizo o resultado da média para multiplica pela altura e voltando a formula divido por 2.
+        
+        var media = (((base_maior + base_menor)/2)*Altura)/2
+
+        alert("A área do trapézio: A=" + media);
+
+
+
+
+        //Paralelogramo
+        var base = prompt(' Paralelogramo: Informe a base:')
+        var altura = prompt (' Paralelogramo: Informe a altura:')
+
+        base = parseInt(base)
+        altura = parseInt(altura)
+
+        alert("Área do Paralelogramo é: " + base +" . " + altura + " A ="+ ( base* altura) );
+
+
+
+
+        // //Triângulo
+        var base = prompt(' Triângulo: Informe a base:')
+        var altura = prompt (' Triângulo: Informe a altura:')
+
+        base = parseInt (base)
+        altura= parseInt(altura)
+        resultado = ( base * altura)
+
+        alert("Triângulo: " + base +" . "+ altura +" A =" + resultado + " /2 Resultado:" +(resultado/2) );
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
