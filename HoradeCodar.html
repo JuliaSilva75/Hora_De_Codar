@@ -44,12 +44,15 @@
         var lado_A = prompt("Quadrado: Informe o primeiro valor do lado ") 
         var lado_B = prompt("Quadrado: Informe o segundo valor do lado ")
 
-        lado_A = parseInt (lado_A)
-        lado_B = parseInt(lado_B)
-
+        lado_A = parseFloat (lado_A)
+        lado_B = parseFloat(lado_B)
         var lado_C = (lado_A*lado_B)
 
-        alert("Área do quadrado: " + lado_A +"."+ lado_B +"=" + lado_C +"² A =" + (lado_C**2 ));
+        if( lado_A > 0 && lado_B > 0 ){
+            alert("Área do quadrado é:" +lado_A + "." +lado_B+ " A = " + lado_C +"²")
+        }else{
+            alert("O número deve ser maior que 0!!")
+        }
 
 
         //Losango
